@@ -9,7 +9,7 @@ public class MainController {
 
     @GetMapping("/")
         public String index(){
-        return "result";
+        return "index";
     }
     @GetMapping("/calc")
     public String calc(@RequestParam(value = "firstNumber",required = false) int firstNumber, @RequestParam(value = "secondNumber", required = false) int secondNumber, @RequestParam(value = "operation", required = false) String operation){
